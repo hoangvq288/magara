@@ -34,6 +34,6 @@ module HousesHelper
 
   # TODO: DRY it. HousesController has same method.
   def owner?
-    true if @house.user == current_user
+    @house.user == current_user
   end
 end
